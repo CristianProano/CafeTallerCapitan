@@ -1,8 +1,6 @@
 import Image from "next/image";
 import fondo from "./img/portada.png";
-import logo from "./img/logo.png";
-import Us from "./componets/sobrenosotros";
-import madera from "./img/madera.jpeg";
+
 import Portada from "./componets/portada";
 export default function Home() {
   return (
