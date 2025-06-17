@@ -73,7 +73,7 @@ export default function Home() {
          
           <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://nextjs.org"
+            href="https://www.instagram.com/elcapitan_cafe_taller?utm_source=ig_web_button_share_sheet&igsh=MjN6MWdkb3owM2wz"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -82,7 +82,7 @@ export default function Home() {
           </a>
           <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://nextjs.org"
+            href="https://www.tiktok.com/@el.capitan__?is_from_webapp=1&sender_device=pc"
             target="_blank"
             rel="noopener noreferrer"
           >
