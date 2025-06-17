@@ -6,12 +6,9 @@ export default function Origami() {
         El origami es el arte japonés de plegar papel para crear figuras y formas. Es una forma de expresión artística que combina precisión, paciencia y creatividad.
       </p>
       <div className="mt-8">
-        <img
-          src="/path/to/origami-image.jpg"
-          alt="Ejemplo de Origami"
-          className="max-w-full h-auto rounded-lg shadow-lg"
-        />
+
       </div>
+      <iframe width="300" height="215" src="https://www.youtube.com/embed/X0hyTmlsBUI?si=pZuGcdnBlXNYWi_k" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
     </div>
   );
 }

@@ -6,11 +6,7 @@ export default function TriviaDelCapitan() {
         La Trivia del Capitán es un juego interactivo que pone a prueba tus conocimientos sobre la historia, cultura y curiosidades del mar. ¡Prepárate para desafiar tu mente y aprender algo nuevo!
       </p>
       <div className="mt-8">
-        <img
-          src="/path/to/trivia-image.jpg"
-          alt="Ejemplo de Trivia del Capitán"
-          className="max-w-full h-auto rounded-lg shadow-lg"
-        />
+       
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import TriviaDelCapitan from './tribia';
-import MemoramaDeSabores from './memorama';
-import SopaDeLetras from './sopa';  
-import BatallaNaval from './batallanaval';
+import TriviaDelCapitan from './juegos/tribia';
+import MemoramaDeSabores from './juegos/memorama';
+import SopaDeLetras from './juegos/sopa';  
+import BatallaNaval from './juegos/batallanaval';
 import Button from './button';
 import Image from 'next/image';
 import fondo from '../img/madera.jpeg';
