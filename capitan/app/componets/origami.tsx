@@ -83,8 +83,9 @@ export default function Origami() {
         height="215"
         src="https://www.youtube.com/embed/X0hyTmlsBUI?si=pZuGcdnBlXNYWi_k"
         title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
         className="rounded-md shadow-lg"
+        allowFullScreen
       ></iframe>
 
       <h1 className="text-3xl font-bold my-10">Galería</h1>
@@ -95,13 +96,18 @@ export default function Origami() {
           className={`relative bg-white rounded-lg shadow-lg ${isFullscreen ? 'min-h-screen overflow-y-auto px-4 pb-6' : ''
             }`}
         >
-          <Image
-            className="h-auto w-full rounded-lg shadow-lg"
-            width="300"
-            height="215"
-            src={selectedImage.src}
-            alt={selectedImage.label}
-          />
+          <div
+            className="cursor-pointer"
+            onClick={handleFullscreen}
+          >
+            <Image
+              className="h-auto w-full rounded-lg shadow-lg"
+              width="300"
+              height="215"
+              src={selectedImage.src}
+              alt={selectedImage.label}
+            />
+          </div>
           <div className="absolute top-4 left-4 bg-black bg-opacity-60 text-white px-3 py-1 rounded-md text-sm font-semibold">
             {selectedImage.label}
           </div>
