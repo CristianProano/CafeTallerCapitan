@@ -80,7 +80,7 @@ const menuData: MenuData = {
         id: '6',
         name: 'BITACORA DE SABOR',
         description:
-          'Doble carne, huevo, jamon, champiñones, tocino, lechuga, cebolla, tomate, queso cheddar, papas, salsa de la casa.',
+          'Doble carne, huevo, jamon, salsa de champiñones, tocino, lechuga, cebolla, tomate, queso cheddar, papas, salsa de la casa.',
         price: '4.25',
         imageUrl: Hambuguesa,
       },
@@ -115,13 +115,13 @@ const menuData: MenuData = {
       {
         id: '10',
         name: 'COMBO 1',
-        description: '1 HAMBURGUESA DOBLE CAÑON + 4 ALITAS + 1 SALSA + SODA 1LT',
+        description: '1 Hamburguesa doble cañon + 4 alitas + 1 salsa + soda 1LT',
         price: '8.00',
       },
       {
         id: '11',
         name: 'COMBO 2',
-        description: '2 HAMBURGUESAS DOBLE CAÑON + 8 ALITAS +2 SALSAS + SODA 1LT',
+        description: '2 Hamburguesa doble cañon + 8 alitas +2 salsas + soda 1LT',
         price: '13.50',
       },
     ],

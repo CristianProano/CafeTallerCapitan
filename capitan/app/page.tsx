@@ -8,6 +8,7 @@ import Menu from "./componets/menu";
 import SobreNosotros from "./componets/sobrenosotros";
 import Origami from "./componets/origami";
 import Juegos from "./componets/juegos";
+import adorno from './img/adorno.png';
 export default function Home() {
   const [vista, setVista] = useState<'menu' | 'nosotros' | 'origami' | 'portada' | 'juegos'>('portada');
 
@@ -99,7 +100,14 @@ export default function Home() {
             </a>
 
           </div>
+           <Image
+                  src={adorno}
+                  alt="Imagen 1"
+        
+                  style={{ width: 'max', height: 'auto', borderRadius: '8px' }}
+                />
         </main>
+       
 
       </div>
     </>
