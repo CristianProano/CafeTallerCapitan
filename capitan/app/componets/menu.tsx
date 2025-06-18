@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import fondo from '../img/menuFondo.png';
-import Sandwitch from '../img/LOMO.png';
-import Hambuguesa from '../img/HAMBURGUESA.png';
+import Sandwitch from '../img/lomo.png';
+import Hambuguesa from '../img/hamburguesa.png';
 import simple from '../img/DOBLE.png';
 import Canoa from '../img/CANOA PIRATA.png';
 import Alitas from '../img/ALITAS.png';
