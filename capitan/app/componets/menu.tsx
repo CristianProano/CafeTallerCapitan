@@ -4,11 +4,11 @@ import Image from 'next/image';
 import fondo from '../img/menuFondo.png';
 import Sandwitch from '../img/lomo.png';
 import Hambuguesa from '../img/hamburguesa.png';
-import simple from '../img/DOBLE.png';
-import Canoa from '../img/CANOA PIRATA.png';
-import Alitas from '../img/ALITAS.png';
-import Combo from '../img/COMBO.png';
-import Salchi from '../img/SALCHI.png';
+import simple from '../img/doble.png';
+import Canoa from '../img/canoa.png';
+import Alitas from '../img/alitas.png';
+import Combo from '../img/combo.png';
+import Salchi from '../img/salchi.png';
 import type { StaticImageData } from 'next/image';
 
 type MenuVariant = {
