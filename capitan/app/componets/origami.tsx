@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef, useState, useEffect } from 'react';
-
+import Image from 'next/image';
 interface ImageItem {
   src: string;
   label: string;
@@ -95,7 +95,7 @@ export default function Origami() {
           className={`relative bg-white rounded-lg shadow-lg ${isFullscreen ? 'min-h-screen overflow-y-auto px-4 pb-6' : ''
             }`}
         >
-          <img
+          <Image
             className="h-auto w-full rounded-lg shadow-lg"
             src={selectedImage.src}
             alt={selectedImage.label}
@@ -114,7 +114,7 @@ export default function Origami() {
           {isFullscreen && selectedImage.diagrams.length > 0 && (
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 pb-6 min-h-screen overflow-y-auto">
               {selectedImage.diagrams.map((diagram, i) => (
-                <img
+                <Image
                   key={i}
                   src={diagram}
                   alt={`Diagrama ${i + 1}`}
@@ -133,7 +133,7 @@ export default function Origami() {
               className="cursor-pointer group"
               onClick={() => setSelectedImage(img)}
             >
-              <img
+              <Image
                 className="h-auto w-full rounded-lg transition-transform duration-300 group-hover:scale-105"
                 src={img.src}
                 alt={img.label}
