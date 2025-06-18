@@ -232,11 +232,20 @@ const Menu: React.FC = () => {
         <div className="w-full text-right pr-4">
           <h1
             className="text-4xl font-bold mb-4"
-            style={{ color: '#a97455', WebkitTextStroke: '0.10px black' }}
+            style={{
+              color: '#a97455',
+              textShadow: `
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000
+      `,
+            }}
           >
             Delicias del capitán
           </h1>
         </div>
+
 
         <hr className="w-full border-t-4 border-[#a97455] my-4" />
 
