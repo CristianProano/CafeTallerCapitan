@@ -2,8 +2,13 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import fondo from '../img/menuFondo.png';
-import Sandwitch from '../img/sandwitch.png';
-import Hambuguesa from '../img/hamburguesa.png';
+import Sandwitch from '../img/LOMO.png';
+import Hambuguesa from '../img/HAMBURGUESA.png';
+import simple from '../img/DOBLE.png';
+import Canoa from '../img/CANOA PIRATA.png';
+import Alitas from '../img/ALITAS.png';
+import Combo from '../img/COMBO.png';
+import Salchi from '../img/SALCHI.png';
 import type { StaticImageData } from 'next/image';
 
 type MenuVariant = {
@@ -52,6 +57,7 @@ const menuData: MenuData = {
         description:
           'Carne, cheddar, salsa de la casa, papas, lechuga, cebolla, tomate.',
         price: '2.80',
+        imageUrl: simple,
       },
       {
         id: '4',
@@ -59,6 +65,7 @@ const menuData: MenuData = {
         description:
           'Carne, Jamón, cheddar, papas, salsa de la casa, lechuga, tomate, cebolla.',
         price: '3.10',
+        imageUrl: simple,
       },
       {
         id: '5',
@@ -66,6 +73,7 @@ const menuData: MenuData = {
         description:
           'Dos Carnes, huevo, tocino, pickles, lechuga, tomate, cebolla, salsa de la casa, queso cheddar, papas.',
         price: '3.80',
+        imageUrl: Hambuguesa,
       },
       {
         id: '6',
@@ -73,11 +81,12 @@ const menuData: MenuData = {
         description:
           'Dos carnes, huevo, jamon, champiñones, tocino, lechuga, cebolla, tomate, queso cheddar, papas, salsa de la casa.',
         price: '4.25',
+        imageUrl: Hambuguesa,
       },
     ],
   },
   ALITAS: {
-    imageUrl: Hambuguesa,
+    imageUrl: Alitas,
     variants: [
       {
         id: '7',
@@ -100,7 +109,7 @@ const menuData: MenuData = {
     ],
   },
   'Combo del tesoro': {
-    imageUrl: Sandwitch,
+    imageUrl: Combo,
     variants: [
       {
         id: '10',
@@ -117,7 +126,7 @@ const menuData: MenuData = {
     ],
   },
   'Papas Fritas': {
-    imageUrl: Sandwitch,
+    imageUrl: Salchi,
     variants: [
       {
         id: '12',
@@ -142,7 +151,7 @@ const menuData: MenuData = {
         description:
           'RELLENO:\n1. Pollo en salsa de champiñones + papas + ensalada \n2. Carne en salsa boloñesa + papas + ensalada\n3. Mixto + papas + ensalada',
         price: '4.50',
-        imageUrl: Sandwitch,
+        imageUrl: Canoa,
       },
       {
         id: '15',
@@ -266,7 +275,27 @@ const Menu: React.FC = () => {
               className="flex flex-col sm:flex-row items-center gap-4 my-6 border rounded-lg shadow-md p-4 bg-[#f9f9f96a]"
             >
               <Image
-                src={Sandwitch}
+                src={item.imageUrl || Sandwitch} // Usar imagen del item o una por defecto
+                alt={item.name}
+                width={180}
+                height={140}
+                className="rounded-xl object-cover"
+              />
+              <div>
+                <h3 className="text-xl font-bold text-[#a97455]">{item.name}</h3>
+                <p className="text-[#574d7c] my-2 whitespace-pre-line">{item.description}</p>
+                <p className="text-lg text-[#704d39] font-semibold">${item.price}</p>
+              </div>
+            </div>
+          ))
+        ) : currentCategory === 'Hamburguesas' ? (
+          categoryData.variants.map((item) => (
+            <div
+              key={item.id}
+              className="flex flex-col sm:flex-row items-center gap-4 my-6 border rounded-lg shadow-md p-4 bg-[#f9f9f96a]"
+            >
+              <Image
+                src={item.imageUrl || Sandwitch}
                 alt={item.name}
                 width={180}
                 height={140}
