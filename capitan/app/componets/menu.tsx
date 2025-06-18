@@ -91,19 +91,19 @@ const menuData: MenuData = {
       {
         id: '7',
         name: 'ALITAS 1',
-        description: '4 ALITAS + 1SALSA + PAPAS + ENSALADA',
+        description: '4 Alitas + 1 salsa + papas + ensalada',
         price: '3.80',
       },
       {
         id: '8',
         name: 'ALITAS 2',
-        description: '8 ALITAS + 2 SALSAS  + PAPAS + ENSALADA',
+        description: '8 Alitas + 2 salsa  + papas + ensalada',
         price: '6.00',
       },
       {
         id: '9',
         name: 'ALITAS 3',
-        description: '16 ALITAS + 2 SALSAS  + PAPAS + ENSALADA',
+        description: '16 Alitas + 2 salsa  + papas + ensalada',
         price: '11.50',
       },
     ],
