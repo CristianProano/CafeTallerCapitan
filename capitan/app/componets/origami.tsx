@@ -25,7 +25,7 @@ const images: ImageItem[] = [
   },
   {
     src: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDRzom6bNQMUwBGGsyQdHYWnBD_T2sd6_jCmL9WDXaykcd4xYYdEEkte_tNEACuckYfneMf5AOSej6M5LS7BoTBe7Uzd-T13Iqh_XmMdEeOz9gJl-xFrARGHjIowuG2Vp1v1oRqlh5r1O_/s1600/camera+won+park.jpg',
-    label: 'Rana',
+    label: 'Camara',
     diagrams: [
       'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNdO1wQXzy4fiod_JREc1oYuWFKOle-8_3cikvZStdizFlfaFwBaG2RBkLUgr5Af1awVvr28nnJ2L-61xqVu24YMVP-sMVAsOyDh5Dwca5hfvChM0OGqlUv-YSB3eaSncpPB-3myxGb1jT/s1600/c1.jpg',
       'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhASHQVYgdO3Xzu-HKzp0NfJAFwwLgAZzq6UqwLmeaM7TFph6sceL549X5-NB4vfdFHFeA3sHktPgwCCmC7HtwsT2nusz4LVqdRjud023vTDdCLnAid1mFAOV8b2VJdDFxz2hB-gvJvpH1V/s1600/c2.jpg',
@@ -97,6 +97,8 @@ export default function Origami() {
         >
           <Image
             className="h-auto w-full rounded-lg shadow-lg"
+            width="300"
+            height="215"
             src={selectedImage.src}
             alt={selectedImage.label}
           />
@@ -115,8 +117,10 @@ export default function Origami() {
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 pb-6 min-h-screen overflow-y-auto">
               {selectedImage.diagrams.map((diagram, i) => (
                 <Image
+                  width="300"
+                  height="215"
                   key={i}
-                  src={diagram}
+                  src={diagram.trimEnd()}
                   alt={`Diagrama ${i + 1}`}
                   className="w-full h-auto rounded-lg shadow border"
                 />
@@ -134,6 +138,8 @@ export default function Origami() {
               onClick={() => setSelectedImage(img)}
             >
               <Image
+                width="300"
+                height="215"
                 className="h-auto w-full rounded-lg transition-transform duration-300 group-hover:scale-105"
                 src={img.src}
                 alt={img.label}

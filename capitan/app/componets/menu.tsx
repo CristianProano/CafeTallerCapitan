@@ -125,7 +125,7 @@ const menuData: MenuData = {
       },
     ],
   },
-  'Papas Fritas': {
+  'PAPAS FRITAS': {
     imageUrl: Salchi,
     variants: [
       {
